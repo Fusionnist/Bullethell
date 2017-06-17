@@ -25,9 +25,9 @@ namespace Game1
 
         protected override void Initialize()
         {
+            base.Initialize();
             width = graphics.PreferredBackBufferWidth;
             height = graphics.PreferredBackBufferHeight;
-            base.Initialize();
             graphics.PreferredBackBufferHeight = 600;
             graphics.PreferredBackBufferWidth = 600;
             translation = new RenderTarget2D(GraphicsDevice, 600, 600);
